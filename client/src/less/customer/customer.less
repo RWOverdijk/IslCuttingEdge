@@ -1,0 +1,75 @@
+// Core variables and mixins
+@import "bootstrap-imports";
+
+@grid-gutter-width: 10px;
+
+@media (min-width : @screen-tablet) {
+  .container {
+    max-width : @container-tablet;
+  }
+}
+
+@media (min-width : @screen-desktop) {
+  .container {
+    max-width : @container-desktop;
+  }
+}
+
+@media (min-width : @screen-lg-desktop) {
+  .container {
+    max-width : @container-lg-desktop;
+  }
+}
+
+body {
+  margin-top : 70px;
+}
+
+.container {
+  .container-fixed();
+
+  .performer-overview {
+    .make-row();
+
+    .tile {
+      .make-sm-column(2);
+
+      .status-indicator {
+        border-radius : 50%;
+        width         : 10px;
+        height        : 10px;
+        margin        : 5px 5px 5px 0;
+        float         : left;
+      }
+
+      .status-indicator.online {
+        background : #9ef39e;
+      }
+
+      .status-indicator.offline {
+        background : #ff9898;
+      }
+
+      .flag-icon {
+        margin-top : 2px;
+      }
+
+      .snapshot {
+        .img-responsive();
+      }
+
+      .panel-heading {
+        padding : 3px 9px;
+      }
+
+      .panel {
+        border-radius : @panel-border-radius @panel-border-radius 0 0;
+        margin-bottom : @grid-gutter-width;
+      }
+
+      .panel-footer {
+        padding : 1px 6px;
+      }
+    }
+  }
+}

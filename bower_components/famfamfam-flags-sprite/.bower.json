@@ -1,0 +1,18 @@
+{
+  "name": "famfamfam-flags-sprite",
+  "main": "src/flags-sprite.min.css",
+  "ignore": [
+    "demo"
+  ],
+  "homepage": "https://github.com/atelierspierrot/famfamfam-flags-sprite",
+  "_release": "c1b562ae34",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c1b562ae344a1697641eaafaf2c5b11db121b5e4"
+  },
+  "_source": "git://github.com/atelierspierrot/famfamfam-flags-sprite.git",
+  "_target": "*",
+  "_originalSource": "famfamfam-flags-sprite",
+  "_direct": true
+}

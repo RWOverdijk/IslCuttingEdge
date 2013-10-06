@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="customer">
+<head>
+    <!--
+        For demonstration purposes, the `title` is dynamically set here based on
+        your `sails.config.appName` to show that you can inject data into layouts
+        exactly the same way as with your other view templates.
+    -->
+    <title><%- title %></title>
+
+    <link rel="stylesheet" href="/styles/customer/customer.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/styles/flags/flags-sprite.min.css" type="text/css" media="all">
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/scripts/customer.js"></script>
+</head>
+
+<body>
+
+<!-- Include the view file for the current controller/route -->
+<%- body %>
+</body>
+</html>
